@@ -1,0 +1,16 @@
+#2021-12-29
+#소수 찾기
+n=int(input()) #입력갯수
+m=[int(x) for x in input().split()] #숫자입력하여 리스트에 저장
+k=2# 2부터 배수 
+a=[0]*len(m) #입력갯수만큼 0 리스트 초기화
+while 1:
+  if k**2>max(m): #n배수의 n값의 제곱이 입력한 숫자의 max보다 크면 
+    break; #중단
+  for i in range(len(m)): #입력한 숫자의 max보다 작으면 
+    if(m[i])==1:# 1은 소수가 아니다.
+      a[i]=1
+    elif m[i]!=k and m[i]%k==0: # n배수의 n은 제외하고 나눠지면
+      a[i]=1 
+  k+=1
+print(a.count(0)) # a리스트에서 0의 갯수가 소수 
