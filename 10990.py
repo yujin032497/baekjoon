@@ -9,6 +9,17 @@ for i in range(0,N):
         else:
             s+=' '
     print(s.rstrip())
+    
+
 #    *     i=0 j=3        
 #   * *    i=1 j=2, j=4   N-i, N+i
 #  *   *   i=2 j=1, j=5   
+
+    
+N=int(input())
+for i in range(0,N):
+    if i==0:
+        print(' '*(N-1)+'*')
+    else:
+        print(' '*(N-i-1)+'*'+' '*(2*i-1)+'*')
+
