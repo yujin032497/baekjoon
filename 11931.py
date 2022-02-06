@@ -5,5 +5,5 @@ M=[]
 N=int(sys.stdin.readline())
 for _ in range(N):
     M.append(int(sys.stdin.readline()))
-for i in reversed(sorted(M)):
+for i in reversed(sorted(M)): # 오름차순 후 reversed를 통해 뒤집어서 내림차순으로
     print(i)
