@@ -1,7 +1,6 @@
 # 2022-02-17
 # 카드 1
 import sys
-M=[]
 N=int(sys.stdin.readline()) # 카드 N장
 C=[x for x in range(1,N+1)] # 1 ~ N까지의 카드 리스트
 while len(C)>1: # 1장 남을때까지
