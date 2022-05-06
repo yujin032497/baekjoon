@@ -16,4 +16,17 @@ s = []
 n = int(sys.stdin.readline().rstrip()) # 입력할 단어 개수 입력
 for _ in range(n):
     s.append(sys.stdin.readline().rstrip()) # 단어입력
-print(len(groupAnagrams(s))) # 집합의 수를 
+print(len(groupAnagrams(s))) # 집합의 수를 출력
+
+
+
+import sys
+s=[]
+n = int(sys.stdin.readline().rstrip())
+for _ in range(n):
+    str=sys.stdin.readline().rstrip() # 단어를 입력하고
+    s.append(''.join(sorted(str))) # sorted를 한 후 .join으로 합치기
+    
+s=set(s) # set으로 중복제거
+s=list(s) # 다시 list로 변형
+print(len(s)) # 리스트 길이 출력
